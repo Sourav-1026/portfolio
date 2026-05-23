@@ -1,0 +1,26 @@
+[
+  {
+    "title": "StudyNook",
+    "description": "StudyNook is a full-stack web application that allows users to browse, list, and book private study rooms. Whether you're looking for a quiet space to focus or want to earn by sharing your own room, StudyNook makes it seamless.",
+    "tech": ["Next.js", "Node.js", "MongoDB", "Express"],
+    "grepo": "https://github.com/Sourav-1026/Study-Nook",
+    "live": "https://study-nook-pied.vercel.app",
+    "image": "https://i.ibb.co.com/LDq8HPL6/Screenshot-2026-05-23-213750.png"
+  },
+  {
+    "title": "TILES GALLERY",
+    "description": "Tiles Gallery is a modern and user-friendly web application where users can explore a wide variety of stylish and premium tile collections. The homepage highlights featured tiles for quick discovery, while the All Tiles page provides access to the complete collection. Users can also view detailed information about each tile through a dedicated details page. Additionally, authenticated users get access to a personalized My Profile page.",
+    "tech": ["Next.js", "Tailwind CSS", "BetterAuth", "React Toastify"],
+    "grepo": "https://github.com/Sourav-1026/Tiles-Gallery",
+    "live": "https://tiles-gallery-iota.vercel.app",
+    "image": "https://i.ibb.co.com/Xr4gSVCL/Screenshot-2026-05-23-213831.png"
+  },
+  {
+    "title": "DigiTools",
+    "description": "A simple and interactive digital tools marketplace. Users can browse tools, add them to their cart, manage items, and proceed to checkout smoothly. The goal of this project is to simulate a real-world e-commerce workflow with a clean UI and dynamic functionality.",
+    "tech": ["React", "Tailwind CSS", "React Toastify", "Daisy UI"],
+    "grepo": "https://github.com/Sourav-1026/DigiTools-Platform",
+    "live": "https://digital-tools-1026.netlify.app",
+    "image": "https://i.ibb.co.com/RZxFGBM/Screenshot-2026-05-23-212437.png"
+  }
+]
