@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Modal } from "@heroui/react";
+import { createPortal } from "react-dom";
 import {
   MdContacts,
   MdEmail,
@@ -51,6 +51,73 @@ const ContactItem = ({ icon: Icon, label, value }) => {
 const ModalContactMe = () => {
   const [open, setOpen] = useState(false);
 
+  const modal = open ? (
+    <div
+      className="fixed inset-0 z-[9999] flex items-center justify-center p-4"
+      onClick={(e) => e.target === e.currentTarget && setOpen(false)}
+    >
+      {/* Backdrop */}
+      <div
+        className="absolute inset-0 bg-black/60 backdrop-blur-sm"
+        onClick={() => setOpen(false)}
+      />
+
+      {/* Dialog */}
+      <div className="relative w-full max-w-sm rounded-2xl bg-[#0d1f3c] border border-white/10 shadow-2xl shadow-black/50 overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+        {/* Top accent line */}
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-sky-400/60 to-transparent" />
+
+        {/* Header */}
+        <div className="flex items-center justify-between px-5 pt-5 pb-4">
+          <div className="flex items-center gap-3">
+            <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-sky-400/10 border border-sky-400/20">
+              <MdContacts className="text-sky-400 text-xl" />
+            </div>
+            <div>
+              <h2 className="text-white font-semibold text-base leading-tight">
+                Contact Info
+              </h2>
+              <p className="text-slate-400 text-xs mt-0.5">Reach out anytime</p>
+            </div>
+          </div>
+          <button
+            onClick={() => setOpen(false)}
+            className="p-1.5 rounded-lg text-slate-500 hover:text-slate-300 hover:bg-white/5 transition-all duration-150"
+            aria-label="Close modal"
+          >
+            <MdClose className="text-xl" />
+          </button>
+        </div>
+
+        {/* Divider */}
+        <div className="mx-5 h-px bg-white/[0.08]" />
+
+        {/* Body */}
+        <div className="px-5 py-4 flex flex-col gap-3">
+          <ContactItem
+            icon={MdEmail}
+            label="Email"
+            value="faruqueomar740@gmail.com"
+          />
+          <ContactItem icon={MdPhone} label="Phone" value="01954845636" />
+        </div>
+
+        {/* Footer */}
+        <div className="px-5 pb-5 pt-1">
+          <button
+            onClick={() => setOpen(false)}
+            className="w-full py-2.5 rounded-xl bg-sky-500/20 border border-sky-400/30
+              text-sky-300 font-semibold text-sm tracking-wide
+              hover:bg-sky-500/30 hover:border-sky-400/50 hover:text-sky-200
+              active:scale-[0.98] transition-all duration-200"
+          >
+            Done
+          </button>
+        </div>
+      </div>
+    </div>
+  ) : null;
+
   return (
     <>
       {/* Trigger Button */}
@@ -67,75 +134,8 @@ const ModalContactMe = () => {
         Contact Me
       </button>
 
-      {/* Modal */}
-      {open && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center p-4"
-          onClick={(e) => e.target === e.currentTarget && setOpen(false)}
-        >
-          {/* Backdrop */}
-          <div
-            className="absolute inset-0 bg-black/60 backdrop-blur-sm"
-            onClick={() => setOpen(false)}
-          />
-
-          {/* Dialog */}
-          <div className="relative w-full max-w-sm rounded-2xl bg-[#0d1f3c] border border-white/10 shadow-2xl shadow-black/50 overflow-hidden animate-in fade-in zoom-in-95 duration-200">
-            {/* Top accent line */}
-            <div className="h-px w-full bg-gradient-to-r from-transparent via-sky-400/60 to-transparent" />
-
-            {/* Header */}
-            <div className="flex items-center justify-between px-5 pt-5 pb-4">
-              <div className="flex items-center gap-3">
-                <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-sky-400/10 border border-sky-400/20">
-                  <MdContacts className="text-sky-400 text-xl" />
-                </div>
-                <div>
-                  <h2 className="text-white font-semibold text-base leading-tight">
-                    Contact Info
-                  </h2>
-                  <p className="text-slate-400 text-xs mt-0.5">
-                    Reach out anytime
-                  </p>
-                </div>
-              </div>
-              <button
-                onClick={() => setOpen(false)}
-                className="p-1.5 rounded-lg text-slate-500 hover:text-slate-300 hover:bg-white/5 transition-all duration-150"
-                aria-label="Close modal"
-              >
-                <MdClose className="text-xl" />
-              </button>
-            </div>
-
-            {/* Divider */}
-            <div className="mx-5 h-px bg-white/8" />
-
-            {/* Body */}
-            <div className="px-5 py-4 flex flex-col gap-3">
-              <ContactItem
-                icon={MdEmail}
-                label="Email"
-                value="faruqueomar740@gmail.com"
-              />
-              <ContactItem icon={MdPhone} label="Phone" value="01954845636" />
-            </div>
-
-            {/* Footer */}
-            <div className="px-5 pb-5 pt-1">
-              <button
-                onClick={() => setOpen(false)}
-                className="w-full py-2.5 rounded-xl bg-sky-500/20 border border-sky-400/30
-                  text-sky-300 font-semibold text-sm tracking-wide
-                  hover:bg-sky-500/30 hover:border-sky-400/50 hover:text-sky-200
-                  active:scale-[0.98] transition-all duration-200"
-              >
-                Done
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+      {/* Portal: renders at document.body, escapes navbar stacking context */}
+      {typeof document !== "undefined" && createPortal(modal, document.body)}
     </>
   );
 };

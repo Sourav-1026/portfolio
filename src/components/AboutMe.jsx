@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FaCode, FaGraduationCap, FaLaptopCode } from "react-icons/fa";
 import { MdRocketLaunch } from "react-icons/md";
+import profileImage from "../../public/portfolio-Image.jpeg";
 
 const AboutMe = () => {
   const highlights = [
@@ -104,7 +105,7 @@ const AboutMe = () => {
               {/* Image container */}
               <div className="relative w-full h-full rounded-2xl overflow-hidden border border-[#1e3a5f] bg-[#0f2040]">
                 <Image
-                  src="/your-photo.jpg"
+                  src={profileImage}
                   alt="MD. Omar Faruque Sourav"
                   fill
                   className="object-cover"
@@ -112,14 +113,14 @@ const AboutMe = () => {
                 />
 
                 {/* Fallback placeholder */}
-                <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-[#0f2040]">
+                {/* <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-[#0f2040]">
                   <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#38bdf8]/10 border border-[#38bdf8]/30 flex items-center justify-center">
                     <span className="text-[#38bdf8] text-xl sm:text-2xl font-bold">
                       OF
                     </span>
                   </div>
                   <p className="text-slate-500 text-xs">Add your photo here</p>
-                </div>
+                </div> */}
               </div>
 
               {/* Floating badge */}
