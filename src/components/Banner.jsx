@@ -61,7 +61,7 @@ const Banner = () => {
               href="https://drive.google.com/file/d/1IPsmjRtC_989VhAeYp08TUzczKDYMg9y/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex justify-center items-center relative px-5 py-2 rounded-full text-sm font-semibold tracking-wide
+              className="flex justify-center items-center w-full relative px-5 py-2 rounded-full text-sm font-semibold tracking-wide
           text-sky-300 border border-sky-400/40
           hover:bg-sky-400/10 hover:border-sky-400 hover:text-sky-200
           active:scale-95 transition-all duration-200 overflow-hidden
