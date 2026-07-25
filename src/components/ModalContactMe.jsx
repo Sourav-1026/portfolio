@@ -104,12 +104,10 @@ const ModalContactMe = () => {
 
         {/* Footer */}
         <div className="px-5 pb-5 pt-1">
+          {/* Footer button */}
           <button
             onClick={() => setOpen(false)}
-            className="w-full py-2.5 rounded-xl bg-sky-500/20 border border-sky-400/30
-              text-sky-300 font-semibold text-sm tracking-wide
-              hover:bg-sky-500/30 hover:border-sky-400/50 hover:text-sky-200
-              active:scale-[0.98] transition-all duration-200"
+            className="w-full py-2.5 rounded-xl bg-sky-500/20 border border-sky-400/30 text-sky-300 font-semibold text-sm tracking-wide hover:bg-sky-500/30 hover:border-sky-400/50 hover:text-sky-200 active:scale-[0.98] transition-all duration-200"
           >
             Done
           </button>
@@ -123,13 +121,7 @@ const ModalContactMe = () => {
       {/* Trigger Button */}
       <button
         onClick={() => setOpen(true)}
-        className="relative px-5 py-2 rounded-full text-sm font-semibold tracking-wide
-          text-sky-300 border border-sky-400/40
-          hover:bg-sky-400/10 hover:border-sky-400 hover:text-sky-200
-          active:scale-95 transition-all duration-200 overflow-hidden
-          before:absolute before:inset-0 before:rounded-full before:opacity-0
-          before:bg-linear-to-r before:from-sky-400/0 before:via-sky-400/5 before:to-sky-400/0
-          hover:before:opacity-100 before:transition-opacity before:duration-300"
+        className="relative px-5 py-2 rounded-full text-sm font-semibold tracking-wide text-sky-300 border border-sky-400/40 hover:bg-sky-400/10 hover:border-sky-400 hover:text-sky-200 active:scale-95 transition-all duration-200 overflow-hidden before:absolute before:inset-0 before:rounded-full before:opacity-0 before:bg-linear-to-r before:from-sky-400/0 before:via-sky-400/5 before:to-sky-400/0 hover:before:opacity-100 before:transition-opacity before:duration-300"
       >
         Contact Me
       </button>
