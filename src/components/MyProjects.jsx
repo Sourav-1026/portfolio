@@ -34,6 +34,7 @@ const MyProjects = () => {
                   src={project.image}
                   alt={project.title}
                   fill
+                  unoptimized
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-[#0a1628]/30" />

@@ -53,7 +53,7 @@ const ModalContactMe = () => {
 
   const modal = open ? (
     <div
-      className="fixed inset-0 z-[9999] flex items-center justify-center p-4"
+      className="fixed inset-0 z-9999 flex items-center justify-center p-4"
       onClick={(e) => e.target === e.currentTarget && setOpen(false)}
     >
       {/* Backdrop */}
@@ -65,7 +65,7 @@ const ModalContactMe = () => {
       {/* Dialog */}
       <div className="relative w-full max-w-sm rounded-2xl bg-[#0d1f3c] border border-white/10 shadow-2xl shadow-black/50 overflow-hidden animate-in fade-in zoom-in-95 duration-200">
         {/* Top accent line */}
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-sky-400/60 to-transparent" />
+        <div className="h-px w-full bg-linear-to-r from-transparent via-sky-400/60 to-transparent" />
 
         {/* Header */}
         <div className="flex items-center justify-between px-5 pt-5 pb-4">
@@ -90,7 +90,7 @@ const ModalContactMe = () => {
         </div>
 
         {/* Divider */}
-        <div className="mx-5 h-px bg-white/[0.08]" />
+        <div className="mx-5 h-px bg-white/8" />
 
         {/* Body */}
         <div className="px-5 py-4 flex flex-col gap-3">
@@ -128,7 +128,7 @@ const ModalContactMe = () => {
           hover:bg-sky-400/10 hover:border-sky-400 hover:text-sky-200
           active:scale-95 transition-all duration-200 overflow-hidden
           before:absolute before:inset-0 before:rounded-full before:opacity-0
-          before:bg-gradient-to-r before:from-sky-400/0 before:via-sky-400/5 before:to-sky-400/0
+          before:bg-linear-to-r before:from-sky-400/0 before:via-sky-400/5 before:to-sky-400/0
           hover:before:opacity-100 before:transition-opacity before:duration-300"
       >
         Contact Me

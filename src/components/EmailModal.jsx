@@ -62,7 +62,7 @@ const EmailModal = () => {
                   hover:bg-sky-400/10 hover:border-sky-400 hover:text-sky-200
                   active:scale-95 transition-all duration-200 overflow-hidden
                   before:absolute before:inset-0 before:rounded-full before:opacity-0
-                  before:bg-gradient-to-r before:from-sky-400/0 before:via-sky-400/5 before:to-sky-400/0
+                  before:bg-linear-to-r before:from-sky-400/0 before:via-sky-400/5 before:to-sky-400/0
                   hover:before:opacity-100 before:transition-opacity before:duration-300"
       >
         Email

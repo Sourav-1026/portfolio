@@ -32,7 +32,7 @@ const Banner = () => {
         {/* Name & title */}
         <div className="space-y-2 sm:space-y-3">
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white leading-tight tracking-tight">
-            MD. Omar Faruque <span className="text-[#38bdf8]">Sourav</span>
+            Md. Omar Faruque <span className="text-[#38bdf8]">Sourav</span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-slate-400 font-medium tracking-wide">
             MERN Stack Developer
@@ -57,7 +57,20 @@ const Banner = () => {
             View My Work
           </Link>
           <div className="w-full sm:w-auto flex justify-center">
-            <ModalContactMe />
+            <Link
+              href="https://drive.google.com/file/d/1IPsmjRtC_989VhAeYp08TUzczKDYMg9y/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex justify-center items-center relative px-5 py-2 rounded-full text-sm font-semibold tracking-wide
+          text-sky-300 border border-sky-400/40
+          hover:bg-sky-400/10 hover:border-sky-400 hover:text-sky-200
+          active:scale-95 transition-all duration-200 overflow-hidden
+          before:absolute before:inset-0 before:rounded-full before:opacity-0
+          before:bg-linear-to-r before:from-sky-400/0 before:via-sky-400/5 before:to-sky-400/0
+          hover:before:opacity-100 before:transition-opacity before:duration-300"
+            >
+              Resume
+            </Link>
           </div>
         </div>
       </div>

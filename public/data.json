@@ -1,26 +1,26 @@
 [
   {
-    "title": "StudyNook",
-    "description": "StudyNook is a full-stack web application that allows users to browse, list, and book private study rooms. Whether you're looking for a quiet space to focus or want to earn by sharing your own room, StudyNook makes it seamless.",
-    "tech": ["Next.js", "Node.js", "MongoDB", "Express"],
-    "grepo": "https://github.com/Sourav-1026/Study-Nook",
-    "live": "https://study-nook-pied.vercel.app",
-    "image": "https://i.ibb.co.com/LDq8HPL6/Screenshot-2026-05-23-213750.png"
+    "title": "SkillSwap",
+    "description": "SkillSwap is a full-stack freelance marketplace where clients post small tasks like designing a logo, writing an article, or fixing a bug — and freelancers browse, apply, and get hired to complete them. Think of it as a streamlined, one-time-job version of Fiverr or Freelancer.com.",
+    "tech": ["Next.js", "Node.js", "MongoDB", "Express", "BetterAuth", "Framer Motion", "Stripe"],
+    "grepo": "https://github.com/Sourav-1026/Skillswap-Client",
+    "live": "https://skillswap-client-eight.vercel.app",
+    "image": "https://i.ibb.co.com/HfbnFqWn/Screenshot-2026-07-25-100417.png"
   },
   {
-    "title": "TILES GALLERY",
-    "description": "Tiles Gallery is a modern and user-friendly web application where users can explore a wide variety of stylish and premium tile collections. The homepage highlights featured tiles for quick discovery, while the All Tiles page provides access to the complete collection. Users can also view detailed information about each tile through a dedicated details page. Additionally, authenticated users get access to a personalized My Profile page.",
-    "tech": ["Next.js", "Tailwind CSS", "BetterAuth", "React Toastify"],
-    "grepo": "https://github.com/Sourav-1026/Tiles-Gallery",
-    "live": "https://tiles-gallery-iota.vercel.app",
-    "image": "https://i.ibb.co.com/Xr4gSVCL/Screenshot-2026-05-23-213831.png"
+    "title": "CourtHive",
+    "description": "CourtHive is a full-stack web application that allows users to browse, list, and book sports courts — including futsal, badminton, and cricket. Whether you're looking to book a court for a quick match or want to earn by listing your own facility, CourtHive makes it seamless.",
+    "tech": ["Next.js", "BetterAuth", "TypeScript", "Framer Motion", "MongoDB", "Express"],
+    "grepo": "https://github.com/Sourav-1026/CourtHive-Client",
+    "live": "https://courthive-clinet.vercel.app",
+    "image": "https://i.ibb.co.com/ZpDFYTZr/Screenshot-2026-07-25-100332.png"
   },
   {
-    "title": "DigiTools",
-    "description": "A simple and interactive digital tools marketplace. Users can browse tools, add them to their cart, manage items, and proceed to checkout smoothly. The goal of this project is to simulate a real-world e-commerce workflow with a clean UI and dynamic functionality.",
-    "tech": ["React", "Tailwind CSS", "React Toastify", "Daisy UI"],
-    "grepo": "https://github.com/Sourav-1026/DigiTools-Platform",
-    "live": "https://digital-tools-1026.netlify.app",
-    "image": "https://i.ibb.co.com/RZxFGBM/Screenshot-2026-05-23-212437.png"
+    "title": "Modern AI Shop",
+    "description": "Modern AI Shop is a full-stack e-commerce platform for discovering futuristic gadgets across a range of categories, complete with detailed product listings, images, and pricing. It's powered by two AI features: an AI Spec Generator that instantly drafts complete product listings from a short concept description, and a site-wide AI Chat Assistant that helps users navigate the platform and answer product questions in real time — no login required.",
+    "tech": ["Next.js", "Node.js", "MongoDB", "Express", "BetterAuth", "Framer Motion", "Google AI"],
+    "grepo": "https://github.com/Sourav-1026/Modern-Ai-Shop-Client",
+    "live": "https://modern-ai-shop-client.vercel.app",
+    "image": "https://i.ibb.co.com/SDK0TPTX/Screenshot-2026-07-25-100020.png"
   }
 ]

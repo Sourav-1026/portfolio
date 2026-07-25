@@ -27,8 +27,7 @@ const Footer = () => {
         <div className="text-center space-y-3">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug">
             {"That's all about me."} <br />
-            <span className="text-[#38bdf8]">Let me know</span> if you want to
-            hire me.
+            <span className="text-[#38bdf8]">Let's build something great.</span>
           </h2>
         </div>
 
